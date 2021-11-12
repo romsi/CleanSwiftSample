@@ -39,6 +39,11 @@ struct LoginView: View {
 	private func login(email: String, password: String) {
 		Auth.auth().signIn(withEmail: email, password: password) { authData, error in
 			guard let authData = authData else {
+				alertContent = AlertContent(
+					id: UUID().uuidString,
+					title: "Error",
+					description: "Your email or password doesn't match."
+				)
 				return
 			}
 			let name = authData.user.displayName!

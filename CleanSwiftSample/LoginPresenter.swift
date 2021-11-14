@@ -8,7 +8,7 @@
 import Foundation
 
 final class LoginPresenter {
-	func getAlertContent(from result: Result<String, Error>) -> AlertContent! {
+	func getAlertContent(from result: Result<String, Error>) -> AlertContent {
 		switch result {
 		case .success(let name):
 			return AlertContent(
@@ -17,7 +17,11 @@ final class LoginPresenter {
 				   description: "Enjoy our great experience!"
 			   )
 		default:
-			return nil
+			return AlertContent(
+				id: UUID().uuidString,
+				   title: "Error",
+				   description: "Your email or password doesn't match."
+			   )
 		}
 	}
 }

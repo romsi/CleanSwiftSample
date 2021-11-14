@@ -40,16 +40,7 @@ struct LoginView: View {
 		let authentication = Authentication()
 		let presenter = LoginPresenter()
 		authentication.login(email: email, password: password) { result in
-			switch result {
-			case .success:
-				alertContent = presenter.getAlertContent(from: result)
-			case .failure:
-				alertContent = AlertContent(
-					id: UUID().uuidString,
-					title: "Error",
-					description: "Your email or password doesn't match."
-				)
-			}
+			alertContent = presenter.getAlertContent(from: result)
 		}
 	}
 }

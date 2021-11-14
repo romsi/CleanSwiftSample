@@ -38,14 +38,11 @@ struct LoginView: View {
 	
 	private func login(email: String, password: String) {
 		let authentication = Authentication()
+		let presenter = LoginPresenter()
 		authentication.login(email: email, password: password) { result in
 			switch result {
-			case .success(let name):
-				alertContent = AlertContent(
-					id: UUID().uuidString,
-					title: "Welcome \(name)",
-					description: "Enjoy our great experience!"
-				)
+			case .success:
+				alertContent = presenter.getAlertContent(from: result)
 			case .failure:
 				alertContent = AlertContent(
 					id: UUID().uuidString,

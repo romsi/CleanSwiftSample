@@ -26,6 +26,8 @@
 		69C93F98273E724F009BD3F6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 69C93F97273E724F009BD3F6 /* README.md */; };
 		69D5BF762741750200AB8CC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
 		69D5BF7D2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5BF7C2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift */; };
+		69D5BF7F2741776100AB8CC4 /* LoginPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5BF7E2741776100AB8CC4 /* LoginPresentationTests.swift */; };
+		69D5BF812741784D00AB8CC4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5BF802741784D00AB8CC4 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		69C93F97273E724F009BD3F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		69D5BF7A2741750200AB8CC4 /* CleanSwiftSampleIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSwiftSampleIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5BF7C2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationIntegrationTest.swift; sourceTree = "<group>"; };
+		69D5BF7E2741776100AB8CC4 /* LoginPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresentationTests.swift; sourceTree = "<group>"; };
+		69D5BF802741784D00AB8CC4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 				694C0FEE273E7223005E40BC /* Preview Content */,
 				698549BD273E85E100C75A09 /* FirebaseGateway.swift */,
 				698549AC273E82AB00C75A09 /* Authentication.swift */,
+				69D5BF802741784D00AB8CC4 /* LoginPresenter.swift */,
 			);
 			path = CleanSwiftSample;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			children = (
 				695512FA2746B997008C2365 /* Doubles */,
 				695512F82746B98F008C2365 /* LoginTests.swift */,
+				69D5BF7E2741776100AB8CC4 /* LoginPresentationTests.swift */,
 			);
 			path = CleanSwiftSampleTests;
 			sourceTree = "<group>";
@@ -361,6 +367,7 @@
 			files = (
 				693632492746AFC200EF0550 /* MainContext.swift in Sources */,
 				698549BE273E85E100C75A09 /* FirebaseGateway.swift in Sources */,
+				69D5BF812741784D00AB8CC4 /* LoginPresenter.swift in Sources */,
 				694C0FEB273E7222005E40BC /* LoginView.swift in Sources */,
 				694C0FE9273E7222005E40BC /* CleanSwiftSampleApp.swift in Sources */,
 				6936324B2746B02400EF0550 /* AuthenticationGateway.swift in Sources */,
@@ -374,6 +381,7 @@
 			files = (
 				695512FC2746B997008C2365 /* AuthenticatingVerificationMock.swift in Sources */,
 				695512F92746B98F008C2365 /* LoginTests.swift in Sources */,
+				69D5BF7F2741776100AB8CC4 /* LoginPresentationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

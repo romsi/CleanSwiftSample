@@ -12,22 +12,9 @@ class LoginTests: XCTestCase {
     func testLoginWithValidCredentials() throws {
 		let mock = AuthenticatingVerificationMock()
 		MainContext.authenticationGateway = mock
-		let authentication = Authentication()
 		
-		var expectedName: String?
-		let expectation = XCTestExpectation(description: "Authenticating with credential")
-		authentication.login(
-			email: "unclebob@cleancoders.com",
-			password: "424242"
-		) { result in
-			switch result {
-			case .success(let name):
-				expectedName = name
-			default: break
-			}
-			expectation.fulfill()
-		}
-		wait(for: [expectation], timeout: 1.0)
+		let result = login(email: "unclebob@cleancoders.com", password: "424242")
+		let expectedName = try? result?.get()
 		
 		XCTAssertEqual(expectedName, "Uncle Bob")
 		mock.verify()
@@ -35,23 +22,25 @@ class LoginTests: XCTestCase {
 	
 	func testLoginWithInvalidCredentials() throws {
 		MainContext.authenticationGateway = FailingAuthenticationStub()
-		let authentication = Authentication()
 		
-		var didFail = false
+		let result = login(email: "romain@cleancoders.com", password: "424242")
+		let didFail = (try? result?.get()) == nil
+		
+		XCTAssertTrue(didFail)
+	}
+	
+	private func login(email: String, password: String) -> (Result<String, Error>)? {
+		var result: (Result<String, Error>)? = nil
 		let expectation = XCTestExpectation(description: "Authenticating with credential")
+		let authentication = Authentication()
 		authentication.login(
-			email: "romain@cleancoders.com",
-			password: "424242"
-		) { result in
-			switch result {
-			case .failure:
-				didFail = true
-			default: break
-			}
+			email: email,
+			password: password
+		) { authenticationResult in
+			result = authenticationResult
 			expectation.fulfill()
 		}
 		wait(for: [expectation], timeout: 1.0)
-		
-		XCTAssertTrue(didFail)
+		return result
 	}
 }

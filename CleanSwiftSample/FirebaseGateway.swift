@@ -7,7 +7,7 @@
 
 import Firebase
 
-final class FirebaseGateway {
+final class FirebaseGateway: AuthenticationGateway {
 	static func configure() {
 		FirebaseApp.configure()
 	}

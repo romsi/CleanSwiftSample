@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6936324B2746B02400EF0550 /* AuthenticationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6936324A2746B02400EF0550 /* AuthenticationGateway.swift */; };
 		694C0FE9273E7222005E40BC /* CleanSwiftSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */; };
 		694C0FEB273E7222005E40BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C0FEA273E7222005E40BC /* LoginView.swift */; };
 		694C0FED273E7223005E40BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C0FEC273E7223005E40BC /* Assets.xcassets */; };
 		694C0FF0273E7223005E40BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C0FEF273E7223005E40BC /* Preview Assets.xcassets */; };
 		694C1004273E7223005E40BC /* LoginViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1003273E7223005E40BC /* LoginViewUITests.swift */; };
 		694C1006273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1005273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift */; };
+		695512F92746B98F008C2365 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695512F82746B98F008C2365 /* LoginTests.swift */; };
+		695512FC2746B997008C2365 /* AuthenticatingVerificationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695512FB2746B997008C2365 /* AuthenticatingVerificationMock.swift */; };
 		698549A7273E787600C75A09 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 698549A6273E787600C75A09 /* FirebaseAuth */; };
 		698549A9273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
 		698549AA273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
@@ -49,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6936324A2746B02400EF0550 /* AuthenticationGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationGateway.swift; sourceTree = "<group>"; };
 		694C0FE5273E7222005E40BC /* CleanSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftSampleApp.swift; sourceTree = "<group>"; };
 		694C0FEA273E7222005E40BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		694C0FFF273E7223005E40BC /* CleanSwiftSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSwiftSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		694C1003273E7223005E40BC /* LoginViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUITests.swift; sourceTree = "<group>"; };
 		694C1005273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		695512F82746B98F008C2365 /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		695512FB2746B997008C2365 /* AuthenticatingVerificationMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatingVerificationMock.swift; sourceTree = "<group>"; };
 		698549A8273E79ED00C75A09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		698549AC273E82AB00C75A09 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		698549BD273E85E100C75A09 /* FirebaseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGateway.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 		694C0FE7273E7222005E40BC /* CleanSwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				6936324A2746B02400EF0550 /* AuthenticationGateway.swift */,
 				698549A8273E79ED00C75A09 /* GoogleService-Info.plist */,
 				694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */,
 				694C0FEA273E7222005E40BC /* LoginView.swift */,
@@ -147,6 +154,8 @@
 		694C0FF8273E7223005E40BC /* CleanSwiftSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				695512FA2746B997008C2365 /* Doubles */,
+				695512F82746B98F008C2365 /* LoginTests.swift */,
 			);
 			path = CleanSwiftSampleTests;
 			sourceTree = "<group>";
@@ -158,6 +167,14 @@
 				694C1005273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift */,
 			);
 			path = CleanSwiftSampleUITests;
+			sourceTree = "<group>";
+		};
+		695512FA2746B997008C2365 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				695512FB2746B997008C2365 /* AuthenticatingVerificationMock.swift */,
+			);
+			path = Doubles;
 			sourceTree = "<group>";
 		};
 		69D5BF7B2741754000AB8CC4 /* CleanSwiftSampleIntegrationTests */ = {
@@ -260,6 +277,7 @@
 					};
 					694C0FF4273E7223005E40BC = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 694C0FE4273E7222005E40BC;
 					};
 					694C0FFE273E7223005E40BC = {
@@ -341,6 +359,7 @@
 				698549BE273E85E100C75A09 /* FirebaseGateway.swift in Sources */,
 				694C0FEB273E7222005E40BC /* LoginView.swift in Sources */,
 				694C0FE9273E7222005E40BC /* CleanSwiftSampleApp.swift in Sources */,
+				6936324B2746B02400EF0550 /* AuthenticationGateway.swift in Sources */,
 				698549AD273E82AB00C75A09 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +368,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695512FC2746B997008C2365 /* AuthenticatingVerificationMock.swift in Sources */,
+				695512F92746B98F008C2365 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +588,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -580,6 +602,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = so.clean.CleanSwiftSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanSwiftSample.app/CleanSwiftSample";
@@ -591,6 +614,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

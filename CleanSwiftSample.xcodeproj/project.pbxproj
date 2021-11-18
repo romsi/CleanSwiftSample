@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6936324B2746B02400EF0550 /* AuthenticationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6936324A2746B02400EF0550 /* AuthenticationGateway.swift */; };
 		693632492746AFC200EF0550 /* MainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693632482746AFC200EF0550 /* MainContext.swift */; };
+		6936324B2746B02400EF0550 /* AuthenticationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6936324A2746B02400EF0550 /* AuthenticationGateway.swift */; };
 		694C0FE9273E7222005E40BC /* CleanSwiftSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */; };
 		694C0FEB273E7222005E40BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C0FEA273E7222005E40BC /* LoginView.swift */; };
 		694C0FED273E7223005E40BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C0FEC273E7223005E40BC /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		694C1006273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1005273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift */; };
 		695512F92746B98F008C2365 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695512F82746B98F008C2365 /* LoginTests.swift */; };
 		695512FC2746B997008C2365 /* AuthenticatingVerificationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695512FB2746B997008C2365 /* AuthenticatingVerificationMock.swift */; };
+		696ED3092746BD5500215EDC /* FailingAuthenticationStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696ED3082746BD5500215EDC /* FailingAuthenticationStub.swift */; };
 		698549A7273E787600C75A09 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 698549A6273E787600C75A09 /* FirebaseAuth */; };
 		698549A9273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
 		698549AA273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
@@ -55,8 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6936324A2746B02400EF0550 /* AuthenticationGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationGateway.swift; sourceTree = "<group>"; };
 		693632482746AFC200EF0550 /* MainContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContext.swift; sourceTree = "<group>"; };
+		6936324A2746B02400EF0550 /* AuthenticationGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationGateway.swift; sourceTree = "<group>"; };
 		694C0FE5273E7222005E40BC /* CleanSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftSampleApp.swift; sourceTree = "<group>"; };
 		694C0FEA273E7222005E40BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		694C1005273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		695512F82746B98F008C2365 /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		695512FB2746B997008C2365 /* AuthenticatingVerificationMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatingVerificationMock.swift; sourceTree = "<group>"; };
+		696ED3082746BD5500215EDC /* FailingAuthenticationStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailingAuthenticationStub.swift; sourceTree = "<group>"; };
 		698549A8273E79ED00C75A09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		698549AC273E82AB00C75A09 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		698549BD273E85E100C75A09 /* FirebaseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGateway.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				695512FB2746B997008C2365 /* AuthenticatingVerificationMock.swift */,
+				696ED3082746BD5500215EDC /* FailingAuthenticationStub.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			files = (
 				695512FC2746B997008C2365 /* AuthenticatingVerificationMock.swift in Sources */,
 				695512F92746B98F008C2365 /* LoginTests.swift in Sources */,
+				696ED3092746BD5500215EDC /* FailingAuthenticationStub.swift in Sources */,
 				69D5BF7F2741776100AB8CC4 /* LoginPresentationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

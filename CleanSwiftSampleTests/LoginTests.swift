@@ -32,4 +32,26 @@ class LoginTests: XCTestCase {
 		XCTAssertEqual(expectedName, "Uncle Bob")
 		mock.verify()
     }
+	
+	func testLoginWithInvalidCredentials() throws {
+		MainContext.authenticationGateway = FailingAuthenticationStub()
+		let authentication = Authentication()
+		
+		var didFail = false
+		let expectation = XCTestExpectation(description: "Authenticating with credential")
+		authentication.login(
+			email: "romain@cleancoders.com",
+			password: "424242"
+		) { result in
+			switch result {
+			case .failure:
+				didFail = true
+			default: break
+			}
+			expectation.fulfill()
+		}
+		wait(for: [expectation], timeout: 1.0)
+		
+		XCTAssertTrue(didFail)
+	}
 }

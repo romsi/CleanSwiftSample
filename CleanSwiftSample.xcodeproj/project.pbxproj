@@ -18,6 +18,7 @@
 		698549A9273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
 		698549AA273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
 		698549AB273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
+		698549BE273E85E100C75A09 /* FirebaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698549BD273E85E100C75A09 /* FirebaseGateway.swift */; };
 		69C93F98273E724F009BD3F6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 69C93F97273E724F009BD3F6 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		694C1003273E7223005E40BC /* LoginViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUITests.swift; sourceTree = "<group>"; };
 		694C1005273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		698549A8273E79ED00C75A09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		698549BD273E85E100C75A09 /* FirebaseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGateway.swift; sourceTree = "<group>"; };
 		69C93F97273E724F009BD3F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				694C0FEA273E7222005E40BC /* LoginView.swift */,
 				694C0FEC273E7223005E40BC /* Assets.xcassets */,
 				694C0FEE273E7223005E40BC /* Preview Content */,
+				698549BD273E85E100C75A09 /* FirebaseGateway.swift */,
 			);
 			path = CleanSwiftSample;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698549BE273E85E100C75A09 /* FirebaseGateway.swift in Sources */,
 				694C0FEB273E7222005E40BC /* LoginView.swift in Sources */,
 				694C0FE9273E7222005E40BC /* CleanSwiftSampleApp.swift in Sources */,
 			);

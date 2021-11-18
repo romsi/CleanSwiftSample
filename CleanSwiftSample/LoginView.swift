@@ -37,21 +37,22 @@ struct LoginView: View {
     }
 	
 	private func login(email: String, password: String) {
-		Auth.auth().signIn(withEmail: email, password: password) { authData, error in
-			guard let authData = authData else {
+		let firebase = FirebaseGateway()
+		firebase.signIn(email: email, password: password) { result in
+			switch result {
+			case .success(let name):
+				alertContent = AlertContent(
+					id: UUID().uuidString,
+					title: "Welcome \(name)",
+					description: "Enjoy our great experience!"
+				)
+			case .failure:
 				alertContent = AlertContent(
 					id: UUID().uuidString,
 					title: "Error",
 					description: "Your email or password doesn't match."
 				)
-				return
 			}
-			let name = authData.user.displayName!
-			alertContent = AlertContent(
-				id: UUID().uuidString,
-				title: "Welcome \(name)",
-				description: "Enjoy our great experience!"
-			)
 		}
 	}
 }

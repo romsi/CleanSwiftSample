@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6936324B2746B02400EF0550 /* AuthenticationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6936324A2746B02400EF0550 /* AuthenticationGateway.swift */; };
+		693632492746AFC200EF0550 /* MainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693632482746AFC200EF0550 /* MainContext.swift */; };
 		694C0FE9273E7222005E40BC /* CleanSwiftSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */; };
 		694C0FEB273E7222005E40BC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C0FEA273E7222005E40BC /* LoginView.swift */; };
 		694C0FED273E7223005E40BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C0FEC273E7223005E40BC /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		6936324A2746B02400EF0550 /* AuthenticationGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationGateway.swift; sourceTree = "<group>"; };
+		693632482746AFC200EF0550 /* MainContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContext.swift; sourceTree = "<group>"; };
 		694C0FE5273E7222005E40BC /* CleanSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftSampleApp.swift; sourceTree = "<group>"; };
 		694C0FEA273E7222005E40BC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				6936324A2746B02400EF0550 /* AuthenticationGateway.swift */,
+				693632482746AFC200EF0550 /* MainContext.swift */,
 				698549A8273E79ED00C75A09 /* GoogleService-Info.plist */,
 				694C0FE8273E7222005E40BC /* CleanSwiftSampleApp.swift */,
 				694C0FEA273E7222005E40BC /* LoginView.swift */,
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693632492746AFC200EF0550 /* MainContext.swift in Sources */,
 				698549BE273E85E100C75A09 /* FirebaseGateway.swift in Sources */,
 				694C0FEB273E7222005E40BC /* LoginView.swift in Sources */,
 				694C0FE9273E7222005E40BC /* CleanSwiftSampleApp.swift in Sources */,

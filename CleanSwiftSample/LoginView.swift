@@ -37,7 +37,7 @@ struct LoginView: View {
     }
 	
 	private func login(email: String, password: String) {
-		let authentication = Authentication(authenticationGateway: FirebaseGateway())
+		let authentication = Authentication()
 		authentication.login(email: email, password: password) { result in
 			switch result {
 			case .success(let name):

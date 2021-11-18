@@ -6,14 +6,10 @@
 //
 
 final class Authentication {
-	private let authenticationGateway: AuthenticationGateway
-	
-	init(authenticationGateway: AuthenticationGateway) {
-		self.authenticationGateway = authenticationGateway
-	}
+	private lazy var authenticationGateway = { return MainContext.authenticationGateway }()
 	
 	func login(email: String, password: String, completion: @escaping (Result<String, Error>) -> Void) {
-		authenticationGateway.signIn(
+		authenticationGateway?.signIn(
 			email: email,
 			password: password,
 			completion: completion)

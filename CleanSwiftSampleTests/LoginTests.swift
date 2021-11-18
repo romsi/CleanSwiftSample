@@ -11,7 +11,8 @@ import XCTest
 class LoginTests: XCTestCase {
     func testLoginWithValidCredentials() throws {
 		let mock = AuthenticatingVerificationMock()
-		let authentication = Authentication(authenticationGateway: mock)
+		MainContext.authenticationGateway = mock
+		let authentication = Authentication()
 		
 		var expectedName: String?
 		let expectation = XCTestExpectation(description: "Authenticating with credential")

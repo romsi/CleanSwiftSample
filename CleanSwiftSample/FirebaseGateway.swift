@@ -8,7 +8,7 @@
 import Firebase
 
 final class FirebaseGateway {
-	init() {
+	static func configure() {
 		FirebaseApp.configure()
 	}
 	

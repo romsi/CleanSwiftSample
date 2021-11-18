@@ -9,7 +9,11 @@ import SwiftUI
 import Firebase
 
 @main
-struct CleanSwiftSampleApp: App {	
+struct CleanSwiftSampleApp: App {
+	init() {
+		FirebaseGateway.configure()
+	}
+	
     var body: some Scene {
         WindowGroup {
             LoginView()

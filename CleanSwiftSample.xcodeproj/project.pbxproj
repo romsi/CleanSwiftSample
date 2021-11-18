@@ -20,6 +20,8 @@
 		698549AB273E79ED00C75A09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
 		698549BE273E85E100C75A09 /* FirebaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698549BD273E85E100C75A09 /* FirebaseGateway.swift */; };
 		69C93F98273E724F009BD3F6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 69C93F97273E724F009BD3F6 /* README.md */; };
+		69D5BF762741750200AB8CC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 698549A8273E79ED00C75A09 /* GoogleService-Info.plist */; };
+		69D5BF7D2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5BF7C2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,13 @@
 			remoteInfo = CleanSwiftSample;
 		};
 		694C1000273E7223005E40BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694C0FDD273E7222005E40BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694C0FE4273E7222005E40BC;
+			remoteInfo = CleanSwiftSample;
+		};
+		69D5BF702741750200AB8CC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 694C0FDD273E7222005E40BC /* Project object */;
 			proxyType = 1;
@@ -53,6 +62,8 @@
 		698549A8273E79ED00C75A09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		698549BD273E85E100C75A09 /* FirebaseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGateway.swift; sourceTree = "<group>"; };
 		69C93F97273E724F009BD3F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		69D5BF7A2741750200AB8CC4 /* CleanSwiftSampleIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSwiftSampleIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D5BF7C2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationIntegrationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69D5BF742741750200AB8CC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +105,7 @@
 				69C93F97273E724F009BD3F6 /* README.md */,
 				694C0FE7273E7222005E40BC /* CleanSwiftSample */,
 				694C0FF8273E7223005E40BC /* CleanSwiftSampleTests */,
+				69D5BF7B2741754000AB8CC4 /* CleanSwiftSampleIntegrationTests */,
 				694C1002273E7223005E40BC /* CleanSwiftSampleUITests */,
 				694C0FE6273E7222005E40BC /* Products */,
 			);
@@ -98,6 +117,7 @@
 				694C0FE5273E7222005E40BC /* CleanSwiftSample.app */,
 				694C0FF5273E7223005E40BC /* CleanSwiftSampleTests.xctest */,
 				694C0FFF273E7223005E40BC /* CleanSwiftSampleUITests.xctest */,
+				69D5BF7A2741750200AB8CC4 /* CleanSwiftSampleIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +158,14 @@
 				694C1005273E7223005E40BC /* CleanSwiftSampleUITestsLaunchTests.swift */,
 			);
 			path = CleanSwiftSampleUITests;
+			sourceTree = "<group>";
+		};
+		69D5BF7B2741754000AB8CC4 /* CleanSwiftSampleIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				69D5BF7C2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift */,
+			);
+			path = CleanSwiftSampleIntegrationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +227,24 @@
 			productReference = 694C0FFF273E7223005E40BC /* CleanSwiftSampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		69D5BF6E2741750200AB8CC4 /* CleanSwiftSampleIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D5BF772741750200AB8CC4 /* Build configuration list for PBXNativeTarget "CleanSwiftSampleIntegrationTests" */;
+			buildPhases = (
+				69D5BF712741750200AB8CC4 /* Sources */,
+				69D5BF742741750200AB8CC4 /* Frameworks */,
+				69D5BF752741750200AB8CC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D5BF6F2741750200AB8CC4 /* PBXTargetDependency */,
+			);
+			name = CleanSwiftSampleIntegrationTests;
+			productName = CleanSwiftSampleTests;
+			productReference = 69D5BF7A2741750200AB8CC4 /* CleanSwiftSampleIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +265,9 @@
 					694C0FFE273E7223005E40BC = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 694C0FE4273E7222005E40BC;
+					};
+					69D5BF6E2741750200AB8CC4 = {
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -241,6 +290,7 @@
 				694C0FE4273E7222005E40BC /* CleanSwiftSample */,
 				694C0FF4273E7223005E40BC /* CleanSwiftSampleTests */,
 				694C0FFE273E7223005E40BC /* CleanSwiftSampleUITests */,
+				69D5BF6E2741750200AB8CC4 /* CleanSwiftSampleIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				698549AB273E79ED00C75A09 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D5BF752741750200AB8CC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D5BF762741750200AB8CC4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +361,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69D5BF712741750200AB8CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D5BF7D2741755D00AB8CC4 /* FirebaseAuthenticationIntegrationTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -315,6 +381,11 @@
 			isa = PBXTargetDependency;
 			target = 694C0FE4273E7222005E40BC /* CleanSwiftSample */;
 			targetProxy = 694C1000273E7223005E40BC /* PBXContainerItemProxy */;
+		};
+		69D5BF6F2741750200AB8CC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694C0FE4273E7222005E40BC /* CleanSwiftSample */;
+			targetProxy = 69D5BF702741750200AB8CC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -583,6 +654,57 @@
 			};
 			name = Release;
 		};
+		69D5BF782741750200AB8CC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = so.clean.CleanSwiftSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanSwiftSample.app/CleanSwiftSample";
+			};
+			name = Debug;
+		};
+		69D5BF792741750200AB8CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = so.clean.CleanSwiftSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanSwiftSample.app/CleanSwiftSample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,6 +740,15 @@
 			buildConfigurations = (
 				694C1010273E7223005E40BC /* Debug */,
 				694C1011273E7223005E40BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D5BF772741750200AB8CC4 /* Build configuration list for PBXNativeTarget "CleanSwiftSampleIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D5BF782741750200AB8CC4 /* Debug */,
+				69D5BF792741750200AB8CC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
